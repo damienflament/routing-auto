@@ -15,7 +15,7 @@ cache:
     - $HOME/.composer/cache/files
 
 env: SYMFONY_VERSION=3.2.*
-dddd
+ddd
 matrix:
   include:
     # Check upcomming deprecations from latest dependencies versions
