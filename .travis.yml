@@ -9,7 +9,6 @@ cache:
   directories:
     - $HOME/.composer/cache/files
 
-
 matrix:
   include:
     # Run tests using current supported dependencies versions
