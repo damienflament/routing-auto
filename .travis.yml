@@ -15,7 +15,7 @@ cache:
     - $HOME/.composer/cache/files
 
 env: SYMFONY_VERSION=3.2.*
-dddaedd
+
 matrix:
   include:
     # Check upcomming deprecations from latest dependencies versions
@@ -41,69 +41,4 @@ script: vendor/bin/phpunit
 
 notifications:
   irc: "irc.freenode.org#symfony-cmf"
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
-FORCE
-
+ 
