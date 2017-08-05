@@ -4,10 +4,7 @@
 language: php
 
 php:
-  - 5.6
   - 7.0
-  - 7.1
-  - hhvm
 
 sudo: false
 
@@ -15,16 +12,18 @@ cache:
   directories:
     - $HOME/.composer/cache/files
 
-env: SYMFONY_VERSION=3.2.*
 
 matrix:
   include:
-    # Check upcomming deprecations from latest dependencies versions
-    - php: 7.1
-      env: STABILITY=dev SYMFONY_VERSION=3.3.*
+    # Run tests using current supported dependencies versions
+    - php: 7.0
+      env: SYMFONY_VERSION=3.2.*
     # Check backward compatibility with oldest supported dependencies versions
     - php: 5.6
       env: SYMFONY_VERSION=2.8.* COMPOSER_FLAGS="--prefer-lowest"
+    # Check upcomming deprecations from dependencies development versions
+    - php: 7.1
+      env: STABILITY=dev SYMFONY_VERSION=3.3.*
     # Run the HHVM build under Ubuntu Trusty (as it is not supported anymore by Ubuntu Precise)
     - php: hhvm
       dist: trusty
