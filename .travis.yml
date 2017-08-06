@@ -43,7 +43,9 @@ before_install:
 
 install: composer update --prefer-dist $COMPOSER_FLAGS
 
-before_script: vendor/bin/phpunit --version
+before_script:
+  - vendor/bin/phpunit --version
+  - env
 
 script: vendor/bin/phpunit
 
