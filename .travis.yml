@@ -9,6 +9,9 @@ cache:
   directories:
     - $HOME/.composer/cache/files
 
+git:
+  depth: 3
+
 matrix:
   include:
     # Run tests using current supported dependencies versions
