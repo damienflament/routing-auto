@@ -2,25 +2,21 @@
 # DO NOT OVERRIDE IT
 
 language: php
-
 sudo: false
+dist: trusty
 
 cache:
   directories:
     - $HOME/.composer/cache/files
 
-git:
-  depth: 3
+php:
+  - 7.0
+  - hhvm
+
+env: SYMFONY_VERSION=3.2.*
 
 matrix:
   include:
-    # Run tests using current supported dependencies versions
-    - php: 7.0
-      env: SYMFONY_VERSION=3.2.*
-    # Run the HHVM build under Ubuntu Trusty (as it is not supported anymore by Ubuntu Precise)
-    - php: hhvm
-      env: SYMFONY_VERSION=3.2.*
-      dist: trusty
     # Check backward compatibility with oldest supported dependencies versions
     - php: 5.6
       env: SYMFONY_VERSION=2.8.* COMPOSER_FLAGS="--prefer-lowest"
