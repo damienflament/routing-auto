@@ -48,3 +48,4 @@ script: vendor/bin/phpunit
 
 notifications:
   irc: "irc.freenode.org#symfony-cmf"
+
